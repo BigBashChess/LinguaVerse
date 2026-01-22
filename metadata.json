@@ -1,0 +1,7 @@
+{
+  "name": "LinguaVerse",
+  "description": "A Duolingo-inspired Japanese learning application powered by Gemini. Features a gamified learning path, dynamic lesson generation, and interactive exercises.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

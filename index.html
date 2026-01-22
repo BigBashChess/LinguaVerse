@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinguaVerse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+              display: ['Rajdhani', 'sans-serif'],
+            },
+            colors: {
+              'space-dark': '#0B0C15',
+              'space-card': '#151725',
+              'neon-cyan': '#00F0FF',
+              'neon-cyan-dim': '#0099AA',
+              'neon-purple': '#7000FF',
+              'neon-pink': '#FF0099',
+              'neon-green': '#00FF94',
+              'glass-border': 'rgba(255, 255, 255, 0.1)',
+            },
+            backgroundImage: {
+              'cyber-grid': 'linear-gradient(to right, #1f2937 1px, transparent 1px), linear-gradient(to bottom, #1f2937 1px, transparent 1px)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0B0C15;
+        color: #E2E8F0;
+        font-family: 'Outfit', sans-serif;
+      }
+      .font-display {
+        font-family: 'Rajdhani', sans-serif;
+      }
+      .glass-panel {
+        background: rgba(21, 23, 37, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .btn-push {
+        transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .btn-push:active {
+        transform: translateY(2px);
+        filter: brightness(0.9);
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0B0C15;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "canvas-confetti": "https://esm.sh/canvas-confetti@^1.9.4",
+    "katex": "https://esm.sh/katex@0.16.9"
+  }
+}
+</script>
+</head>
+  <body class="bg-space-dark text-gray-200">
+    <div id="root"></div>
+  </body>
+</html>
